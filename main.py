@@ -17,8 +17,9 @@ extracted_logs.select(
     "timestamp",
     "process",
     "username",
+    "uid",
+    "session_id",
     "target_user",
-    "ip_address",
     "command",
     "auth_status",
     "message"
