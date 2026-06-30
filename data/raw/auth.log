@@ -1,0 +1,289 @@
+2026-06-16T09:15:34.311260+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: New seat seat0.
+2026-06-16T09:15:34.334378+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-06-16T09:15:34.334411+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-06-16T09:15:34.334428+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-06-16T09:15:35.346539+00:00 sarthak-swayam-VirtualBox passwd[1771]: password for 'sarthak-swayam' changed by 'root'
+2026-06-16T09:15:37.406522+00:00 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-06-16T09:15:37.436322+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-06-16T09:15:37.516634+00:00 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-06-16T09:15:37.519430+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-06-16T09:15:52.852317+00:00 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2026-06-16T09:15:52.852401+00:00 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2026-06-16T09:15:52.868135+00:00 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-16T09:15:52.880023+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: New session '2' of user 'sarthak-swayam' with class 'user' and type 'wayland'.
+2026-06-16T09:15:52.912573+00:00 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-16T09:15:52.914106+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: New session '3' of user 'sarthak-swayam' with class 'manager' and type 'unspecified'.
+2026-06-16T09:15:53.224285+00:00 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-16T09:15:56.497896+00:00 sarthak-swayam-VirtualBox polkitd[1501]: Error converting subject to JS object: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get credentials of name ':1.36': no such name
+2026-06-16T09:15:57.982372+00:00 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-06-16T09:15:57.999406+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: Session c1 logged out. Waiting for processes to exit.
+2026-06-16T09:15:58.008040+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: Removed session c1.
+2026-06-16T09:16:02.518823+00:00 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-16T09:16:02.520632+00:00 sarthak-swayam-VirtualBox pkexec[5079]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-16T09:16:08.457116+00:00 sarthak-swayam-VirtualBox (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-06-16T09:16:08.458036+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: Removed session 1.
+2026-06-16T09:31:01.760175+00:00 sarthak-swayam-VirtualBox dbus-daemon[1487]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2026-06-16T09:38:22.517691+00:00 sarthak-swayam-VirtualBox gnome-keyring-daemon[3327]: couldn't initialize slot with master password: The password or PIN is incorrect
+2026-06-16T09:38:22.519729+00:00 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-16T09:47:02.280919+00:00 sarthak-swayam-VirtualBox CRON[9787]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-16T09:47:02.289014+00:00 sarthak-swayam-VirtualBox CRON[9787]: pam_unix(cron:session): session closed for user root
+2026-06-16T10:00:02.869558+00:00 sarthak-swayam-VirtualBox CRON[9828]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-16T10:00:02.880049+00:00 sarthak-swayam-VirtualBox CRON[9828]: pam_unix(cron:session): session closed for user root
+2026-06-16T10:47:01.958104+00:00 sarthak-swayam-VirtualBox CRON[10014]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-16T10:47:01.981179+00:00 sarthak-swayam-VirtualBox CRON[10014]: pam_unix(cron:session): session closed for user root
+2026-06-16T10:56:01.228394+00:00 sarthak-swayam-VirtualBox gnome-keyring-daemon[3327]: couldn't initialize slot with master password: The password or PIN is incorrect
+2026-06-16T10:56:01.233039+00:00 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-16T11:00:01.150065+00:00 sarthak-swayam-VirtualBox CRON[10126]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-16T11:00:01.155638+00:00 sarthak-swayam-VirtualBox CRON[10126]: pam_unix(cron:session): session closed for user root
+2026-06-16T11:29:25.168532+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: The system will power off now!
+2026-06-16T11:29:25.219097+00:00 sarthak-swayam-VirtualBox systemd-logind[1524]: System is powering down.
+2026-06-16T11:29:25.266797+00:00 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session closed for user sarthak-swayam
+2026-06-17T10:26:17.064010+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: New seat seat0.
+2026-06-17T10:26:17.064017+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-06-17T10:26:17.064031+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-06-17T10:26:17.064034+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-06-17T10:26:18.009280+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-06-17T10:26:18.035859+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-06-17T10:26:18.202359+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-06-17T10:26:18.204119+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-06-17T10:26:30.780770+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2026-06-17T10:26:30.780841+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2026-06-17T10:26:30.806314+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-17T10:26:30.816153+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: New session '2' of user 'sarthak-swayam' with class 'user' and type 'wayland'.
+2026-06-17T10:26:30.859946+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-17T10:26:30.862908+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: New session '3' of user 'sarthak-swayam' with class 'manager' and type 'unspecified'.
+2026-06-17T10:26:31.121928+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-17T10:26:34.742336+05:30 sarthak-swayam-VirtualBox polkitd[1453]: Error converting subject to JS object: Process 2036 terminated
+2026-06-17T10:26:36.630347+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-06-17T10:26:36.660728+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: Session c1 logged out. Waiting for processes to exit.
+2026-06-17T10:26:36.690142+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: Removed session c1.
+2026-06-17T10:26:39.640778+05:30 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:26:39.642383+05:30 sarthak-swayam-VirtualBox pkexec[4233]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-17T10:26:47.159041+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: Removed session 1.
+2026-06-17T10:26:47.159200+05:30 sarthak-swayam-VirtualBox (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-06-17T10:28:51.600706+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:28:51.600919+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/apt update
+2026-06-17T10:28:59.936375+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:29:39.504884+05:30 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:29:39.507194+05:30 sarthak-swayam-VirtualBox pkexec[4990]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-17T10:29:47.911946+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:29:47.912118+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/apt install virtualbox-guest-utils virtualbox-guest-x11
+2026-06-17T10:30:01.209069+05:30 sarthak-swayam-VirtualBox CRON[5413]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-17T10:30:01.211447+05:30 sarthak-swayam-VirtualBox CRON[5413]: pam_unix(cron:session): session closed for user root
+2026-06-17T10:30:04.574217+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:30:13.892819+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:30:13.893037+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/sbin/reboot 
+2026-06-17T10:30:13.907379+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:30:50.860983+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: The system will reboot now!
+2026-06-17T10:30:50.930934+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: System is rebooting.
+2026-06-17T10:30:50.971188+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session closed for user sarthak-swayam
+2026-06-17T10:30:51.039303+05:30 sarthak-swayam-VirtualBox systemd-logind[1494]: Session 2 logged out. Waiting for processes to exit.
+2026-06-17T10:29:12.128014+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New seat seat0.
+2026-06-17T10:29:12.128016+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-06-17T10:29:12.128019+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-06-17T10:29:12.128021+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-06-17T10:29:12.897139+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-06-17T10:29:12.912840+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-06-17T10:29:13.012480+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-06-17T10:29:13.014250+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-06-17T10:31:25.458529+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2026-06-17T10:31:25.458579+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2026-06-17T10:31:25.476503+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-17T10:31:25.486034+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New session '2' of user 'sarthak-swayam' with class 'user' and type 'wayland'.
+2026-06-17T10:31:25.527877+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-17T10:31:25.529292+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New session '3' of user 'sarthak-swayam' with class 'manager' and type 'unspecified'.
+2026-06-17T10:31:25.761230+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-17T10:31:30.657727+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-06-17T10:31:30.665669+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Session c1 logged out. Waiting for processes to exit.
+2026-06-17T10:31:30.670176+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Removed session c1.
+2026-06-17T10:31:31.953152+05:30 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:31:31.959221+05:30 sarthak-swayam-VirtualBox pkexec[4037]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-17T10:31:40.908622+05:30 sarthak-swayam-VirtualBox (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-06-17T10:31:40.912268+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Removed session 1.
+2026-06-17T10:32:03.287905+05:30 sarthak-swayam-VirtualBox CRON[4318]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-17T10:32:03.295833+05:30 sarthak-swayam-VirtualBox CRON[4318]: pam_unix(cron:session): session closed for user root
+2026-06-17T10:38:04.139672+05:30 sarthak-swayam-VirtualBox unix_chkpwd[5541]: password check failed for user (sarthak-swayam)
+2026-06-17T10:38:04.139917+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:auth): authentication failure; logname=sarthak-swayam uid=1000 euid=0 tty=/dev/pts/0 ruser=sarthak-swayam rhost=  user=sarthak-swayam
+2026-06-17T10:38:11.916369+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:38:11.916519+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/sbin/usermod -aG vboxsf sarthak-swayam
+2026-06-17T10:38:11.939535+05:30 sarthak-swayam-VirtualBox usermod[5545]: add 'sarthak-swayam' to group 'vboxsf'
+2026-06-17T10:38:11.939655+05:30 sarthak-swayam-VirtualBox usermod[5545]: add 'sarthak-swayam' to shadow group 'vboxsf'
+2026-06-17T10:38:11.954139+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:38:24.145140+05:30 sarthak-swayam-VirtualBox dbus-daemon[1455]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2026-06-17T10:38:29.530240+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:38:29.531034+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/sbin/reboot 
+2026-06-17T10:38:29.539226+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:38:51.682237+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session closed for user sarthak-swayam
+2026-06-17T10:38:51.741307+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Session 2 logged out. Waiting for processes to exit.
+2026-06-17T10:38:51.741636+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Removed session 2.
+2026-06-17T10:38:51.844444+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60579) by (uid=0)
+2026-06-17T10:38:51.853261+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New session 'c2' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-06-17T10:38:51.894984+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60579) by gdm-greeter(uid=0)
+2026-06-17T10:38:51.896169+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New session '5' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-06-17T10:38:58.453118+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2026-06-17T10:38:58.453443+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2026-06-17T10:38:58.474472+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-17T10:38:58.477933+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: New session '6' of user 'sarthak-swayam' with class 'user' and type 'wayland'.
+2026-06-17T10:38:58.507925+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-17T10:39:01.478551+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-06-17T10:39:01.484808+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Session c2 logged out. Waiting for processes to exit.
+2026-06-17T10:39:01.489683+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Removed session c2.
+2026-06-17T10:39:02.698540+05:30 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:39:02.704419+05:30 sarthak-swayam-VirtualBox pkexec[8132]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-17T10:39:11.918647+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Removed session 5.
+2026-06-17T10:39:11.919062+05:30 sarthak-swayam-VirtualBox (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-06-17T10:44:13.252615+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:44:13.252884+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/sbin/usermod -aG vboxsf sarthak-swayam
+2026-06-17T10:44:13.268577+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:44:20.546947+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:44:20.547049+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/sbin/reboot 
+2026-06-17T10:44:20.561582+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:45:01.767463+05:30 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:45:01.769532+05:30 sarthak-swayam-VirtualBox pkexec[15515]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-17T10:46:01.616946+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:46:01.617144+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/systemctl reboot -i
+2026-06-17T10:46:01.626686+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: The system will reboot now!
+2026-06-17T10:46:01.637521+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:46:01.673596+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: System is rebooting.
+2026-06-17T10:46:01.698535+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session closed for user sarthak-swayam
+2026-06-17T10:46:01.883291+05:30 sarthak-swayam-VirtualBox systemd-logind[1485]: Session 6 logged out. Waiting for processes to exit.
+2026-06-17T10:46:17.010423+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: New seat seat0.
+2026-06-17T10:46:17.010429+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-06-17T10:46:17.010431+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-06-17T10:46:17.010433+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-06-17T10:46:17.593846+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-06-17T10:46:17.609086+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-06-17T10:46:17.684041+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-06-17T10:46:17.685289+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-06-17T10:46:29.003403+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2026-06-17T10:46:29.003527+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2026-06-17T10:46:29.026844+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-17T10:46:29.041823+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: New session '2' of user 'sarthak-swayam' with class 'user' and type 'wayland'.
+2026-06-17T10:46:29.087822+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-17T10:46:29.089294+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: New session '3' of user 'sarthak-swayam' with class 'manager' and type 'unspecified'.
+2026-06-17T10:46:29.277072+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-17T10:46:33.155409+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-06-17T10:46:33.165930+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: Session c1 logged out. Waiting for processes to exit.
+2026-06-17T10:46:33.170459+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: Removed session c1.
+2026-06-17T10:46:34.939408+05:30 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:46:34.942057+05:30 sarthak-swayam-VirtualBox pkexec[4075]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-17T10:46:44.242823+05:30 sarthak-swayam-VirtualBox (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-06-17T10:46:44.243570+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: Removed session 1.
+2026-06-17T10:50:02.635906+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-17T10:50:02.636194+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/journalctl -b
+2026-06-17T10:50:02.700286+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-17T10:56:49.616039+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-17T10:57:16.575421+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: The system will power off now!
+2026-06-17T10:57:16.604925+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: System is powering down.
+2026-06-17T10:57:16.744560+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session closed for user sarthak-swayam
+2026-06-17T10:57:16.852038+05:30 sarthak-swayam-VirtualBox systemd-logind[1407]: Session 2 logged out. Waiting for processes to exit.
+2026-06-18T14:50:12.723951+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: New seat seat0.
+2026-06-18T14:50:12.723957+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-06-18T14:50:12.723959+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-06-18T14:50:12.723960+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-06-18T14:50:14.069630+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-06-18T14:50:14.087819+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-06-18T14:50:14.239913+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-06-18T14:50:14.249339+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-06-18T14:50:35.732531+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2026-06-18T14:50:35.732651+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2026-06-18T14:50:35.750425+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-18T14:50:35.759426+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: New session '2' of user 'sarthak-swayam' with class 'user' and type 'wayland'.
+2026-06-18T14:50:35.797407+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-18T14:50:35.799902+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: New session '3' of user 'sarthak-swayam' with class 'manager' and type 'unspecified'.
+2026-06-18T14:50:36.031888+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-18T14:50:40.423830+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-06-18T14:50:40.428682+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: Session c1 logged out. Waiting for processes to exit.
+2026-06-18T14:50:40.430898+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: Removed session c1.
+2026-06-18T14:50:42.607099+05:30 sarthak-swayam-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-18T14:50:42.608956+05:30 sarthak-swayam-VirtualBox pkexec[4133]: sarthak-swayam: Executing command [USER=root] [TTY=unknown] [CWD=/home/sarthak-swayam] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-06-18T14:50:50.852497+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: Removed session 1.
+2026-06-18T14:53:20.062605+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-18T14:53:20.063007+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-06-18T14:53:20.072018+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-18T15:00:31.875987+05:30 sarthak-swayam-VirtualBox dbus-daemon[1462]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2026-06-18T15:17:01.922332+05:30 sarthak-swayam-VirtualBox CRON[4682]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-18T15:17:01.928873+05:30 sarthak-swayam-VirtualBox CRON[4682]: pam_unix(cron:session): session closed for user root
+2026-06-18T15:30:01.612913+05:30 sarthak-swayam-VirtualBox CRON[4869]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-18T15:30:01.625162+05:30 sarthak-swayam-VirtualBox CRON[4869]: pam_unix(cron:session): session closed for user root
+2026-06-18T15:33:51.914028+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-18T15:50:53.343461+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-18T15:50:53.351616+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/apt update
+2026-06-18T15:51:02.623907+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-18T15:51:23.157654+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-18T15:51:23.159365+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/apt upgrade
+2026-06-18T15:52:33.313102+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-18T16:09:24.125077+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-18T16:09:24.129879+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/ls /root
+2026-06-18T16:09:24.132644+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-18T16:09:46.485024+05:30 sarthak-swayam-VirtualBox unix_chkpwd[16640]: password check failed for user (root)
+2026-06-18T16:09:46.488751+05:30 sarthak-swayam-VirtualBox su: pam_unix(su:auth): authentication failure; logname=sarthak-swayam uid=1000 euid=0 tty=/dev/pts/0 ruser=sarthak-swayam rhost=  user=root
+2026-06-18T16:09:48.689307+05:30 sarthak-swayam-VirtualBox su[16635]: FAILED SU (to root) sarthak-swayam on pts/0
+2026-06-18T16:09:59.621918+05:30 sarthak-swayam-VirtualBox unix_chkpwd[16649]: password check failed for user (root)
+2026-06-18T16:09:59.623225+05:30 sarthak-swayam-VirtualBox su: pam_unix(su:auth): authentication failure; logname=sarthak-swayam uid=1000 euid=0 tty=/dev/pts/0 ruser=sarthak-swayam rhost=  user=root
+2026-06-18T16:10:01.580092+05:30 sarthak-swayam-VirtualBox su[16644]: FAILED SU (to root) sarthak-swayam on pts/0
+2026-06-18T16:10:09.061213+05:30 sarthak-swayam-VirtualBox unix_chkpwd[16659]: password check failed for user (root)
+2026-06-18T16:10:09.062941+05:30 sarthak-swayam-VirtualBox su: pam_unix(su:auth): authentication failure; logname=sarthak-swayam uid=1000 euid=0 tty=/dev/pts/0 ruser=sarthak-swayam rhost=  user=root
+2026-06-18T16:10:11.003422+05:30 sarthak-swayam-VirtualBox su[16656]: FAILED SU (to root) sarthak-swayam on pts/0
+2026-06-18T16:10:18.671695+05:30 sarthak-swayam-VirtualBox unix_chkpwd[16665]: password check failed for user (root)
+2026-06-18T16:10:18.673443+05:30 sarthak-swayam-VirtualBox su: pam_unix(su:auth): authentication failure; logname=sarthak-swayam uid=1000 euid=0 tty=/dev/pts/0 ruser=sarthak-swayam rhost=  user=root
+2026-06-18T16:10:22.570917+05:30 sarthak-swayam-VirtualBox su[16661]: FAILED SU (to root) sarthak-swayam on pts/0
+2026-06-18T16:17:02.275775+05:30 sarthak-swayam-VirtualBox CRON[16699]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-18T16:17:02.289555+05:30 sarthak-swayam-VirtualBox CRON[16699]: pam_unix(cron:session): session closed for user root
+2026-06-18T16:30:02.759096+05:30 sarthak-swayam-VirtualBox CRON[16715]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-18T16:30:02.776023+05:30 sarthak-swayam-VirtualBox CRON[16715]: pam_unix(cron:session): session closed for user root
+2026-06-18T16:45:50.518266+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-18T16:46:00.397094+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: The system will power off now!
+2026-06-18T16:46:00.613046+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: System is powering down.
+2026-06-18T16:46:00.691795+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session closed for user sarthak-swayam
+2026-06-18T16:46:00.929569+05:30 sarthak-swayam-VirtualBox systemd-logind[1502]: Session 2 logged out. Waiting for processes to exit.
+2026-06-19T10:27:33.675289+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: New seat seat0.
+2026-06-19T10:27:33.675291+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-06-19T10:27:33.675293+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-06-19T10:27:33.675295+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-06-19T10:27:34.594705+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-06-19T10:27:34.613416+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-06-19T10:27:34.696809+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-06-19T10:27:34.698442+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-06-19T10:27:50.314200+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2026-06-19T10:27:50.314314+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2026-06-19T10:27:50.348209+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-19T10:27:50.363927+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: New session '2' of user 'sarthak-swayam' with class 'user' and type 'wayland'.
+2026-06-19T10:27:50.416648+05:30 sarthak-swayam-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user sarthak-swayam(uid=1000) by sarthak-swayam(uid=0)
+2026-06-19T10:27:50.418598+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: New session '3' of user 'sarthak-swayam' with class 'manager' and type 'unspecified'.
+2026-06-19T10:27:50.748958+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-19T10:27:55.357354+05:30 sarthak-swayam-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-06-19T10:27:55.370405+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: Session c1 logged out. Waiting for processes to exit.
+2026-06-19T10:27:55.382332+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: Removed session c1.
+2026-06-19T10:28:05.476007+05:30 sarthak-swayam-VirtualBox systemd-logind[1453]: Removed session 1.
+2026-06-19T10:30:01.790298+05:30 sarthak-swayam-VirtualBox CRON[4406]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-19T10:30:01.793894+05:30 sarthak-swayam-VirtualBox CRON[4406]: pam_unix(cron:session): session closed for user root
+2026-06-19T10:35:30.446579+05:30 sarthak-swayam-VirtualBox dbus-daemon[1387]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2026-06-19T10:38:02.374272+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-19T10:38:02.379829+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/grep -Ei failed|accepted|sudo|authentication/var/log/auth.log
+2026-06-19T10:40:05.970897+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-19T10:40:05.971124+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/grep -Ei failed|accepted|sudo|authentication/var/log/auth.log
+2026-06-19T11:12:10.056745+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:auth): conversation failed
+2026-06-19T11:12:10.069569+05:30 sarthak-swayam-VirtualBox gdm-password]: pam_unix(gdm-password:auth): auth could not identify password for [sarthak-swayam]
+2026-06-19T11:17:01.956195+05:30 sarthak-swayam-VirtualBox CRON[7201]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-19T11:17:01.983608+05:30 sarthak-swayam-VirtualBox CRON[7201]: pam_unix(cron:session): session closed for user root
+2026-06-19T11:18:18.983089+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-19T11:30:01.043960+05:30 sarthak-swayam-VirtualBox CRON[7370]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-19T11:30:01.055949+05:30 sarthak-swayam-VirtualBox CRON[7370]: pam_unix(cron:session): session closed for user root
+2026-06-19T11:57:08.173146+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-19T12:17:01.249366+05:30 sarthak-swayam-VirtualBox CRON[7611]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-19T12:17:01.283233+05:30 sarthak-swayam-VirtualBox CRON[7611]: pam_unix(cron:session): session closed for user root
+2026-06-19T12:28:39.653424+05:30 sarthak-swayam-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2026-06-19T12:30:01.329381+05:30 sarthak-swayam-VirtualBox CRON[7732]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-06-19T12:30:01.335765+05:30 sarthak-swayam-VirtualBox CRON[7732]: pam_unix(cron:session): session closed for user root
+2026-06-19T12:33:59.559185+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-19T12:33:59.577549+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-06-19T12:33:59.617049+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-19T12:35:48.999919+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-19T12:35:49.001210+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log~/auth.log
+2026-06-19T12:35:49.014250+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-19T12:38:19.554659+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-19T12:38:19.558487+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/cp /var/log.auth.log /home/sarthak-swayam/auth.log
+2026-06-19T12:38:19.562318+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2026-06-19T12:39:05.375033+05:30 sarthak-swayam-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sarthak-swayam(uid=1000)
+2026-06-19T12:39:05.380152+05:30 sarthak-swayam-VirtualBox sudo: sarthak-swayam : TTY=/dev/pts/0 ; PWD=/home/sarthak-swayam ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /home/sarthak-swayam/auth.log
