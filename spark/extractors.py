@@ -38,6 +38,10 @@ def extract_target_user():
         regexp_extract(col("message"), TARGET_USER, 1) != "",
         regexp_extract(col("message"), TARGET_USER, 1)
     )
+    target_user_equals = when(
+        regexp_extract(col("message"), TARGET_USER_EQUALS, 1) != "",
+        regexp_extract(col("message"), TARGET_USER_EQUALS, 1)
+    )
 
     target_exec = when(
         regexp_extract(col("message"), TARGET_USER_EXEC, 1) != "",
@@ -46,6 +50,7 @@ def extract_target_user():
 
     return coalesce(
         target_user,
+        target_user_equals,
         target_exec
     )
 

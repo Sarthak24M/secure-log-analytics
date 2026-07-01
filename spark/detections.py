@@ -96,7 +96,7 @@ def brute_force_detection(df):
         df
 
         .filter(
-            col("auth_status") == "FAILED"
+            col("event_type") == "AUTH_FAILURE"
         )
 
         .groupBy(

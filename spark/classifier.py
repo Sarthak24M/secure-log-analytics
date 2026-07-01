@@ -4,6 +4,18 @@ from pyspark.sql.functions import (
     lit
 )
 
+from .patterns import (
+    AUTH_FAILURE,
+    AUTH_SUCCESS,
+    PASSWORD_CHANGE,
+    PRIVILEGED_COMMAND,
+    SESSION_OPEN,
+    SESSION_CLOSE,
+    CRON_JOB,
+    SYSTEM_SHUTDOWN,
+    SYSTEM_STARTUP
+)
+
 
 def classify_events(df):
 
@@ -21,49 +33,55 @@ def classify_events(df):
 
             # Authentication Failures
             when(
-                col("message").rlike("(?i)failed|failure|authentication failure"),
+                col("message").rlike(AUTH_FAILURE),
                 lit("AUTH_FAILURE")
+            )
+
+            # Authentication Success
+            .when(
+                col("message").rlike(AUTH_SUCCESS),
+                lit("AUTH_SUCCESS")
             )
 
             # Password Changes
             .when(
-                col("message").rlike("(?i)password.*changed|changed by"),
+                col("message").rlike(PASSWORD_CHANGE),
                 lit("PASSWORD_CHANGE")
             )
 
             # Privileged Commands
             .when(
-                col("message").rlike("(?i)executing command"),
+                col("message").rlike(PRIVILEGED_COMMAND),
                 lit("PRIVILEGED_COMMAND")
             )
 
             # Session Open
             .when(
-                col("message").rlike("(?i)session opened"),
+                col("message").rlike(SESSION_OPEN),
                 lit("SESSION_OPEN")
             )
 
             # Session Close
             .when(
-                col("message").rlike("(?i)session closed"),
+                col("message").rlike(SESSION_CLOSE),
                 lit("SESSION_CLOSE")
             )
 
             # CRON Jobs
             .when(
-                col("process").rlike("(?i)^cron"),
+                col("process").rlike(CRON_JOB),
                 lit("CRON_JOB")
             )
 
             # System Shutdown
             .when(
-                col("message").rlike("(?i)powering down|power off|shutdown"),
+                col("message").rlike(SYSTEM_SHUTDOWN),
                 lit("SYSTEM_SHUTDOWN")
             )
 
             # System Startup
             .when(
-                col("message").rlike("(?i)startup|system boot|boot completed"),
+                col("message").rlike(SYSTEM_STARTUP),
                 lit("SYSTEM_STARTUP")
             )
 
