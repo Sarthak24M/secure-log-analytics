@@ -14,7 +14,9 @@ from spark.detections import (
     privileged_activity,
     password_change_alerts,
     authentication_failures,
-    brute_force_detection
+    brute_force_detection,
+    excessive_sudo_detection,
+    root_activity_detection
 )
 
 spark = create_spark_session()
@@ -33,6 +35,14 @@ classified_logs = classify_events(extracted_logs)
 # -------------------------------
 #Security Detection
 #--------------------------------
+
+
+
+print("\n===== EXCESSIVE PRIVILEGED COMMANDS =====")
+
+excessive_sudo_detection(
+    classified_logs
+).show(truncate=False)
 
 print("\n===== HIGH SEVERITY ALERTS =====")
 
@@ -61,6 +71,12 @@ authentication_failures(
 print("\n===== POSSIBLE BRUTE FORCE =====")
 
 brute_force_detection(
+    classified_logs
+).show(truncate=False)
+
+print("\n===== ROOT ACTIVITY =====")
+
+root_activity_detection(
     classified_logs
 ).show(truncate=False)
 

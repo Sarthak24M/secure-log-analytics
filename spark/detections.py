@@ -116,3 +116,64 @@ def brute_force_detection(df):
         )
 
     )
+
+from pyspark.sql.functions import col, count
+
+
+def excessive_sudo_detection(df):
+
+    return (
+
+        df
+
+        .filter(
+            col("event_type") == "PRIVILEGED_COMMAND"
+        )
+
+        .groupBy(
+            "username"
+        )
+
+        .agg(
+            count("*").alias("privileged_commands")
+        )
+
+        .filter(
+            col("privileged_commands") >= 3
+        )
+
+        .orderBy(
+            col("privileged_commands").desc()
+        )
+
+    )
+
+def root_activity_detection(df):
+
+    return (
+
+        df
+
+        .filter(
+            (col("username") == "root") |
+            (col("target_user") == "root") |
+            (col("uid") == "0")
+        )
+
+        .filter(
+            col("process") != "CRON"
+        )
+
+        .select(
+            "timestamp",
+            "username",
+            "target_user",
+            "process",
+            "event_type",
+            "command",
+            "severity"
+        )
+
+        .orderBy("timestamp")
+
+    )
