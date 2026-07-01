@@ -3,12 +3,18 @@ from spark.reader import read_logs
 from spark.parser import parse_logs
 from spark.extractor import extract_fields
 from spark.classifier import classify_events
-
 from spark.analytics import (
     event_distribution,
     authentication_summary,
     top_user,
     top_process
+)
+from spark.detections import (
+    high_severity_alerts,
+    privileged_activity,
+    password_change_alerts,
+    authentication_failures,
+    brute_force_detection
 )
 
 spark = create_spark_session()
@@ -21,6 +27,42 @@ logs = read_logs(
 parsed_logs = parse_logs(logs)
 extracted_logs = extract_fields(parsed_logs)
 classified_logs = classify_events(extracted_logs)
+
+
+
+# -------------------------------
+#Security Detection
+#--------------------------------
+
+print("\n===== HIGH SEVERITY ALERTS =====")
+
+high_severity_alerts(
+    classified_logs
+).show(truncate=False)
+
+print("\n===== PRIVILEGED ACTIVITY =====")
+
+privileged_activity(
+    classified_logs
+).show(truncate=False)
+
+print("\n===== PASSWORD CHANGE ALERTS =====")
+
+password_change_alerts(
+    classified_logs
+).show(truncate=False)
+
+print("\n===== AUTHENTICATION FAILURES =====")
+
+authentication_failures(
+    classified_logs
+).show(truncate=False)
+
+print("\n===== POSSIBLE BRUTE FORCE =====")
+
+brute_force_detection(
+    classified_logs
+).show(truncate=False)
 
 # -------------------------------
 # Analytics
@@ -55,13 +97,13 @@ top_process(
 # Sample Classified Logs
 # -------------------------------
 
-classified_logs.select(
-    "timestamp",
-    "process",
-    "username",
-    "event_type",
-    "severity",
-    "auth_status"
-).show(50, truncate=False)
+# classified_logs.select(
+#     "timestamp",
+#     "process",
+#     "username",
+#     "event_type",
+#     "severity",
+#     "auth_status"
+# ).show(50, truncate=False)
 
 spark.stop()
