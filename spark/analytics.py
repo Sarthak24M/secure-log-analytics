@@ -58,3 +58,26 @@ def top_user(df):
             col("total_events").desc()
         )
     )
+
+def top_process (df):
+    return (
+
+        df
+
+        .filter(
+            col("process").isNotNull()
+        )
+
+        .groupBy(
+            "process"
+        )
+
+        .agg(
+            count("*").alias("total_events")
+        )
+
+        .orderBy(
+            col("total_events").desc()
+        )
+
+    )

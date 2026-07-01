@@ -7,7 +7,8 @@ from spark.classifier import classify_events
 from spark.analytics import (
     event_distribution,
     authentication_summary,
-    top_user
+    top_user,
+    top_process
 )
 
 spark = create_spark_session()
@@ -41,6 +42,12 @@ authentication_summary(
 print("\n===== TOP USERS =====")
 
 top_user(
+    classified_logs
+).show(truncate=False)
+
+print("\n===== TOP PROCESSES =====")
+
+top_process(
     classified_logs
 ).show(truncate=False)
 
