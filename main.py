@@ -2,6 +2,7 @@ from spark.spark_session import create_spark_session
 from spark.reader import read_logs
 from spark.parser import parse_logs
 from spark.extractor import extract_fields
+from spark.classifier import classify_events
 
 spark = create_spark_session()
 
@@ -12,17 +13,15 @@ logs = read_logs(
 
 parsed_logs = parse_logs(logs)
 extracted_logs = extract_fields(parsed_logs)
+classified_logs = classify_events(extracted_logs)
 
-extracted_logs.select(
+classified_logs.select(
     "timestamp",
     "process",
     "username",
-    "uid",
-    "session_id",
-    "target_user",
-    "command",
-    "auth_status",
-    "message"
-).show(40, truncate=False)
+    "event_type",
+    "severity",
+    "auth_status"
+).show(50, truncate=False)
 
 spark.stop()
