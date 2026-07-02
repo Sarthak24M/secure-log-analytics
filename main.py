@@ -18,17 +18,10 @@ from spark.detections import (
     excessive_sudo_detection,
     root_activity_detection
 )
+from spark.pipeline import build_pipeline
 
-spark = create_spark_session()
+spark, classified_logs = build_pipeline() 
 
-logs = read_logs(
-    spark,
-    "data/raw/auth.log"
-)
-
-parsed_logs = parse_logs(logs)
-extracted_logs = extract_fields(parsed_logs)
-classified_logs = classify_events(extracted_logs)
 
 
 
