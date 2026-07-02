@@ -52,7 +52,7 @@ def get_summary():
 
     }
 
-    spark.stop()
+    
 
     return summary
 
@@ -84,7 +84,7 @@ def get_analytics():
 
     }
 
-    spark.stop()
+    
 
     return analytics
 
@@ -126,6 +126,6 @@ def get_detections():
 
     }
 
-    spark.stop()
+    
 
     return detections

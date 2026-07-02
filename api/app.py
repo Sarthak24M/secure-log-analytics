@@ -1,9 +1,11 @@
 from flask import Flask
+from flask_cors import CORS
 from api.services import get_summary
 from api.services import get_analytics
 from api.services import get_detections
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route("/")

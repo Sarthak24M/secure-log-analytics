@@ -1,9 +1,46 @@
 import { Box } from "@mui/material";
+import { useEffect, useState } from "react";
 
 import Navbar from "../components/Navbar";
 import SummaryCard from "../components/SummaryCard";
+import { getSummary } from "../services/api";
 
 function Dashboard() {
+    const [summary, setSummary] = useState(null);
+
+
+    useEffect(() => {
+
+    async function fetchSummary() {
+
+        try {
+
+            const data = await getSummary();
+
+            setSummary(data);
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+        }
+
+    }
+
+    fetchSummary();
+
+    }, []);
+
+    if (!summary) {
+
+    return <h2>Loading...</h2>;
+
+    }
+
+
+
 
     return (
 
