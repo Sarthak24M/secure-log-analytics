@@ -1,19 +1,19 @@
-from spark.pipeline import build_pipeline
-from spark.analytics import event_distribution
-from spark.detections import (
+from pipeline.engine import build_pipeline
+from pipeline.analytics import event_distribution
+from pipeline.detections import (
     authentication_failures,
     password_change_alerts,
     high_severity_alerts,
     privileged_activity,
 )
-from spark.analytics import (
+from pipeline.analytics import (
     event_distribution,
     authentication_summary,
     top_user,
     top_process
 )
 
-from spark.detections import (
+from pipeline.detections import (
     high_severity_alerts,
     authentication_failures,
     password_change_alerts,

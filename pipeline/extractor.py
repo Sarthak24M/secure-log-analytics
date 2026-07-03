@@ -4,7 +4,7 @@ from pyspark.sql.functions import (
     lit
 )
 
-from spark.extractors import *
+from pipeline.extractors import *
 
 
 def extract_fields(df):

@@ -1,8 +1,8 @@
-from spark.spark_session import create_spark_session
-from spark.reader import read_logs
-from spark.parser import parse_logs
-from spark.extractor import extract_fields
-from spark.classifier import classify_events
+from pipeline.spark_session import create_spark_session
+from pipeline.reader import read_logs
+from pipeline.parser import parse_logs
+from pipeline.extractor import extract_fields
+from pipeline.classifier import classify_events
 
 
 def build_pipeline():

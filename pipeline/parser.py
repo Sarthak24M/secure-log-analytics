@@ -66,4 +66,5 @@ def parse_logs(df):
         )
     )
 
+    
     return parsed_df

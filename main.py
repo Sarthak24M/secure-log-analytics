@@ -1,15 +1,15 @@
-from spark.spark_session import create_spark_session
-from spark.reader import read_logs
-from spark.parser import parse_logs
-from spark.extractor import extract_fields
-from spark.classifier import classify_events
-from spark.analytics import (
+from pipeline.spark_session import create_spark_session
+from pipeline.reader import read_logs
+from pipeline.parser import parse_logs
+from pipeline.extractor import extract_fields
+from pipeline.classifier import classify_events
+from pipeline.analytics import (
     event_distribution,
     authentication_summary,
     top_user,
     top_process
 )
-from spark.detections import (
+from pipeline.detections import (
     high_severity_alerts,
     privileged_activity,
     password_change_alerts,
@@ -18,7 +18,7 @@ from spark.detections import (
     excessive_sudo_detection,
     root_activity_detection
 )
-from spark.pipeline import build_pipeline
+from pipeline.engine import build_pipeline
 
 spark, classified_logs = build_pipeline() 
 

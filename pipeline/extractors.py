@@ -5,7 +5,7 @@ from pyspark.sql.functions import (
     coalesce
 )
 
-from spark.patterns import *
+from pipeline.patterns import *
 
 
 def extract_username():
