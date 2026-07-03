@@ -1,4 +1,8 @@
-from pyspark.sql.functions import count, col
+from pyspark.sql.functions import (count, 
+                                   col,
+                                   when,
+                                   sum as spark_sum
+                                   )
 
 def event_distribution(df):
     return (
@@ -81,3 +85,50 @@ def top_process (df):
         )
 
     )
+def dashboard_summary(df):
+    result = (
+
+        df
+
+        .agg(
+
+            count("*").alias("total_events"),
+
+            spark_sum(
+                when(
+                    col("event_type") == "AUTH_FAILURE",
+                    1
+                ).otherwise(0)
+            ).alias("authentication_failures"),
+
+            spark_sum(
+                when(
+                    col("event_type") == "PASSWORD_CHANGE",
+                    1
+                ).otherwise(0)
+            ).alias("password_changes"),
+
+            spark_sum(
+                when(
+                    col("severity") == "HIGH",
+                    1
+                ).otherwise(0)
+            ).alias("high_severity_alerts"),
+
+            spark_sum(
+                when(
+                    col("process").isin(
+                        "sudo",
+                        "pkexec",
+                        "su",
+                        "passwd"
+                    ),
+                    1
+                ).otherwise(0)
+            ).alias("privileged_commands")
+
+        )
+
+    )
+
+    return result.first().asDict()

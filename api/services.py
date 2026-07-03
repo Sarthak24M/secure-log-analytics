@@ -1,4 +1,4 @@
-from pipeline.engine import build_pipeline
+from pipeline.cache import get_pipeline
 from pipeline.analytics import event_distribution
 from pipeline.detections import (
     authentication_failures,
@@ -10,7 +10,8 @@ from pipeline.analytics import (
     event_distribution,
     authentication_summary,
     top_user,
-    top_process
+    top_process,
+    dashboard_summary
 )
 
 from pipeline.detections import (
@@ -29,36 +30,15 @@ def dataframe_to_json(df):
 
 def get_summary():
 
-    spark, classified_logs = build_pipeline()
+    spark, classified_logs = get_pipeline()
 
-    summary = {
 
-        "total_events":
-            classified_logs.count(),
 
-        "authentication_failures":
-            authentication_failures(classified_logs).count(),
-
-        "password_changes":
-            password_change_alerts(classified_logs).count(),
-
-        "high_severity_alerts":
-            high_severity_alerts(classified_logs).count(),
-
-        "privileged_commands":
-            privileged_activity(classified_logs)
-            .filter("event_type = 'PRIVILEGED_COMMAND'")
-            .count()
-
-    }
-
-    
-
-    return summary
+    return dashboard_summary(classified_logs)
 
 def get_analytics():
 
-    spark, classified_logs = build_pipeline()
+    spark, classified_logs = get_pipeline()
 
     analytics = {
 
@@ -90,7 +70,7 @@ def get_analytics():
 
 def get_detections():
 
-    spark, classified_logs = build_pipeline()
+    spark, classified_logs = get_pipeline()
 
     detections = {
 

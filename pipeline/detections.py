@@ -177,3 +177,4 @@ def root_activity_detection(df):
         .orderBy("timestamp")
 
     )
+
