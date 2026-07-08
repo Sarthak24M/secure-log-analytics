@@ -5,7 +5,7 @@
 ![Flask](https://img.shields.io/badge/Flask-3.1.3-000000?style=flat&logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)
 ![MUI](https://img.shields.io/badge/Material%20UI-v9-007FFF?style=flat&logo=mui&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
 
 A full-stack security log analytics platform that ingests Ubuntu authentication logs, processes them through an Apache Spark pipeline, and surfaces detections and analytics through a Flask REST API and a React dashboard.
 
