@@ -19,6 +19,7 @@ start = time.perf_counter()
 
 spark, classified_logs = build_pipeline()
 
+print(f"Total log entries: {classified_logs.count()}")
 end = time.perf_counter()
 
 print(f"Pipeline Build Time : {end - start:.4f} seconds")
