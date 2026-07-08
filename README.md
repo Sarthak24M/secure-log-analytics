@@ -371,9 +371,6 @@ Analytics Time      : X.XXXX seconds
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
