@@ -9,7 +9,7 @@
 
 A full-stack security log analytics platform that ingests Ubuntu authentication logs, processes them through an Apache Spark pipeline, and surfaces detections and analytics through a Flask REST API and a React dashboard.
 
-> Built during a 45-day internship as a working proof-of-concept for scalable, structured log analysis.
+> Built during an internship as a working proof-of-concept for scalable, structured log analysis.
 
 ---
 
