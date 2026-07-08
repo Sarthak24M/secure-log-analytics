@@ -44,43 +44,43 @@ function Dashboard() {
 
     return (
 
-        <>
+    <>
 
-            <Navbar />
+        <Navbar />
 
-            <Box
-                sx={{
-                    display: "flex",
-                    gap: 3,
-                    padding: 4,
-                    flexWrap: "wrap"
-                }}
-            >
+        <Box
+            sx={{
+                display: "flex",
+                gap: 3,
+                padding: 4,
+                flexWrap: "wrap"
+            }}
+        >
 
-                <SummaryCard
-                    title="Total Events"
-                    value={289}
-                />
+            <SummaryCard
+                title="Total Events"
+                value={summary.total_events}
+            />
 
-                <SummaryCard
-                    title="Failed Logins"
-                    value={5}
-                />
+            <SummaryCard
+                title="Failed Logins"
+                value={summary.authentication_failures}
+            />
 
-                <SummaryCard
-                    title="High Alerts"
-                    value={5}
-                />
+            <SummaryCard
+                title="High Alerts"
+                value={summary.high_severity_alerts}
+            />
 
-                <SummaryCard
-                    title="Password Changes"
-                    value={1}
-                />
+            <SummaryCard
+                title="Password Changes"
+                value={summary.password_changes}
+            />
 
-                <SummaryCard
-                    title="Privileged Commands"
-                    value={8}
-                />
+            <SummaryCard
+                title="Privileged Commands"
+                value={summary.privileged_commands}
+            />
 
             </Box>
 

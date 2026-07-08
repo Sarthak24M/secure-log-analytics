@@ -14,3 +14,7 @@ spark-warehouse/
 
 # Output
 output/
+
+frontend/node_modules/
+frontend/dist/
+.env
