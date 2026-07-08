@@ -1,11 +1,5 @@
 from pipeline.cache import get_pipeline
-from pipeline.analytics import event_distribution
-from pipeline.detections import (
-    authentication_failures,
-    password_change_alerts,
-    high_severity_alerts,
-    privileged_activity,
-)
+
 from pipeline.analytics import (
     event_distribution,
     authentication_summary,
